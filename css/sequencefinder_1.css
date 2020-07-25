@@ -1,59 +1,68 @@
-body {
-  
-   
+body, html {
+    height: 100%;
   }
-.home_container{
-  display: flex;
-  height: 100%;
-  width:100%;
-  flex-wrap: wrap;
-  align-content: space-between;
-   border :2px solid black; 
-  position: relative;
-   
-
+  
+  * {
+    box-sizing: border-box;
   }
 
-  
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-image: linear-gradient(to right, rgb(197, 216, 224),rgb(160, 222, 238));
-     border :2px solid black; 
-   
+  .home_container {
+     background-image: url("https://images.unsplash.com/photo-1594652634010-275456c808d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+   position :relative;
    
   }
- #grad{
-    height: 100vh;
-    background-image: linear-gradient(to right, rgb(39, 141, 172),rgb(21, 197, 241));
- } 
 
 .gameimage{
-    
-    left:100px;
     position: relative;
-    z-index : "-1";
-   
+    z-index : "-1"; 
 }
 
 .gametitle{
-    
-  font-size: 40px;
-  font-family: 'Abril Fatface', cursive;
-  color:black;
-  text-align: center;
+    font-family: 'Orbitron', sans-serif;
+  font-size: 70px;
+  font-family: 'Permanent Marker', cursive;
+  color:rgb(206, 205, 205);
   line-height: 75px;
+  position: relative;
   
+}
 
+.gamebutton{
+    top:250px;
+    font-size: 20px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    height :80px;
+    width:300px;
+    color:rgb(206, 205, 205);
+    text-align: center;
+    position: relative;  
 }
 
 .game_box{
-    top:100px;
-    right:250px;
-    border : 2px solid black;  
-    height:450px;
    
-   position:relative;   
-   z-index : "-1"; 
+   background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  font-weight: bold;
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height:100%;
+  width: 80%;
+  padding: 40px;
+  
 }
