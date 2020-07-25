@@ -1,0 +1,55 @@
+body {
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .game-board {
+    display: flex;
+  flex-direction: row;
+    margin-top: 70px;
+    min-height: 300px;
+    min-width: 300px;
+    font-size: 0; /* handle collapsing margins */
+  }
+  
+  .quadrant {
+    border-style: solid;
+    border-color: #eee;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    position :relative;
+    
+  }
+  
+  .top-left {
+    border-top-left-radius: 100%;
+    border-width: 4px 2px 2px 4px;
+    position :relative;
+    left:510px;
+  }
+  
+  .top-right {
+    border-top-right-radius: 100%;
+    border-width: 4px 4px 2px 2px;
+    position :relative;
+    left:510px;
+
+  }
+  
+  .bottom-left {
+    border-bottom-left-radius: 100%;
+    border-width: 4px 2px 4px 4px;
+    position :relative;
+    top:250px;
+  }
+  
+  .bottom-right {
+    border-bottom-right-radius: 100%;
+    border-width: 2px 4px 4px 2px;
+    position :relative;
+    top:250px;
+  }
+  
