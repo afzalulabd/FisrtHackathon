@@ -1,21 +1,33 @@
 var main=document.createElement('div');
-main.setAttribute("id","grad");
-main.classList.add('home_container');
+main.classList.add('flex-container');
 
 document.body.append(main);
 
+var x = document.createElement("IMG");
+x.setAttribute("src", "./img/brain_running.png");
+x.setAttribute("width", "80%");
+x.setAttribute("height", "100%");
+x.setAttribute("alt", "Sequence Finder");
+x.classList.add('gameimage');
+main.appendChild(x);
 
-var game_title=document.createElement('div');
-game_title.classList.add('gametitle');
-game_title.innerHTML='SEQUENCE  FINDER';
+var game_box=document.createElement('div');
+game_box.classList.add('game_box');
+main.appendChild(game_box);
 
-main.append(game_title);
+var gametitle=document.createElement('P');
+gametitle.innerHTML ="SEQUENCE FINDER"
+gametitle.classList.add('gametitle');
+game_box.appendChild(gametitle);
 
-var x = document.createElement("BUTTON");
-var t = document.createTextNode("Click me");
-x.appendChild(t);
 
-game_title.appendChild('x');
+
+
+
+
+
+
+
 
 
 

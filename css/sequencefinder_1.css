@@ -4,24 +4,56 @@ body {
   }
 .home_container{
   display: flex;
-  height: 80vh;
+  height: 100%;
+  width:100%;
   flex-wrap: wrap;
   align-content: space-between;
+   border :2px solid black; 
+  position: relative;
+   
 
+  }
+
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(197, 216, 224),rgb(160, 222, 238));
+     border :2px solid black; 
+   
+   
   }
  #grad{
     height: 100vh;
     background-image: linear-gradient(to right, rgb(39, 141, 172),rgb(21, 197, 241));
  } 
 
+.gameimage{
+    
+    left:100px;
+    position: relative;
+    z-index : "-1";
+   
+}
+
 .gametitle{
-    border : 2px solid white;
-  font-size: 80px;
-  font-style: italic;
-  color:white;
-  margin-top: 300px;
-  margin-left:25%;
+    
+  font-size: 40px;
+  font-family: 'Abril Fatface', cursive;
+  color:black;
   text-align: center;
   line-height: 75px;
+  
 
+}
+
+.game_box{
+    top:100px;
+    right:250px;
+    border : 2px solid black;  
+    height:450px;
+   
+   position:relative;   
+   z-index : "-1"; 
 }
