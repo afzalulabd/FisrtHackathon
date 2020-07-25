@@ -1,0 +1,27 @@
+body {
+  
+   
+  }
+.home_container{
+  display: flex;
+  height: 80vh;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+  }
+ #grad{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(39, 141, 172),rgb(21, 197, 241));
+ } 
+
+.gametitle{
+    border : 2px solid white;
+  font-size: 80px;
+  font-style: italic;
+  color:white;
+  margin-top: 300px;
+  margin-left:25%;
+  text-align: center;
+  line-height: 75px;
+
+}
