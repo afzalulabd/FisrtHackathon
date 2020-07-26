@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+  } 
+
+
+  .gameoverpage{
+    margin: 0;
+    height:100vh;
+   position: relative;
+  
+}
+
+.finalscore{
+    height:100px;
+    position: relative;
+    width :20%;
+    top:80px;
+    left:600px;
+    background-color: rgb(15, 144, 204);
+}
+
+
+.buffertitle{
+    top:30px;
+    color:black;
+    text-align: center;
+    position: relative;
+    font-size: 70px;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 75px;
+}
+
+.gameovertitle2{
+
+    top:60px;
+    color:black;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 75px;
+}
+
+
+.playagain_button{
+    top:120px;
+    font-size: 20px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    height :60px;
+    width:100px;
+    color:rgb(206, 205, 205);
+    text-align: center;
+    position: relative;  
+}

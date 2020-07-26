@@ -13,10 +13,18 @@ gametitle.innerHTML ="SEQUENCE FINDER"
 gametitle.classList.add('gametitle');
 game_box.appendChild(gametitle);
 
+
+function nextpage(){
+
+window.location.replace("./common/Game.html");
+}
+
 var game_button = document.createElement("BUTTON");
  var gamenode=document.createTextNode("Let's Play!");
  game_button.appendChild(gamenode);
+ game_button.setAttribute("id","Playbutton")
  game_button.classList.add('gamebutton');
+ game_button.setAttribute("onclick","nextpage()")
  game_box.appendChild(game_button);
 
 
