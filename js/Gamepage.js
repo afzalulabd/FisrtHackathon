@@ -72,7 +72,10 @@ if(arr_store_auto.length===count){
     var scorevalue=this.gamescore(arr_store_auto.length);
     document.getElementById("scorevalue").innerText=scorevalue;
     arr_store_manual=[];
-   
+    count=0;
+    seq.blink();
+}
+    }
    
 //    if(count%4==0){
 // this.time=(this.time+10000);
@@ -87,8 +90,8 @@ if(arr_store_auto.length===count){
 //               count=0;
 //               seq.blink();
 //         }},this.time);
-        }
-    }
+        
+    
 
      blink(){
        
@@ -128,7 +131,7 @@ if(arr_store_auto.length===count){
     gameover(randlen){
         var final= this.gamescore(randlen);
         localStorage.setItem("storageName",final);
-        window.location.replace("../common./Gameover.html");
+        //window.location.replace("../common./Gameover.html");
 
     }
 
