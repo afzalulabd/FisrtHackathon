@@ -131,7 +131,7 @@ if(arr_store_auto.length===count){
     gameover(randlen){
         var final= this.gamescore(randlen);
         localStorage.setItem("storageName",final);
-        //window.location.replace("../common./Gameover.html");
+        window.location.replace("../common./Gameover.html");
 
     }
 
